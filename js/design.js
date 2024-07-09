@@ -1,16 +1,19 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 let width, height;
-const dots = [];
+let dots = [];
 const mouse = { x: null, y: null };
 
 function resizeCanvas() {
     width = canvas.width = window.innerWidth;
     height = canvas.height = window.innerHeight;
+    createDots();
 }
 
 function createDots() {
-    for (let i = 0; i < 100; i++) {
+    dots = [];
+    const numberOfDots = Math.floor((width * height) / 10000);
+    for (let i = 0; i < numberOfDots; i++) {
         dots.push({
             x: Math.random() * width,
             y: Math.random() * height,
