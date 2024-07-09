@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sultry society - home</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .container {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 20%;
+        }
+
+        h1 {
+            position: absolute;
+            top: 20px;
+            left: 20%;
+            color: purple;
+            text-shadow: 0 0 10px purple, 0 0 20px purple, 0 0 30px purple;
+            font-size: 3em;
+        }
+
+        .links {
+            position: absolute;
+            top: 20px;
+            left: 20%;
+            display: flex;
+            gap: 20px;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        .links a:hover {
+            color: purple;
+            text-shadow: 0 0 5px purple, 0 0 10px purple;
+        }
+
+        .example {
+            margin-top: 20px;
+        }
+
+        .example p {
+            color: white;
+            text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .example button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border: 2px solid purple;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            text-transform: uppercase;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .example button:hover {
+            background-color: purple;
+            box-shadow: 0 0 10px purple, 0 0 20px purple, 0 0 30px purple;
+        }
+
+        .example button, .links a {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>sultry society</h1>
+        <div class="links">
+            <a href="index.html">home</a>
+            <a href="latest.html">uploads</a>
+        </div>
+        <div class="example">
+            <p>this page was nowhere to be found!</p>
+            <button onclick="window.location.href='index.html'">go home</button>
+        </div>
+    </div>
+</body>
+</html>
