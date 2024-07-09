@@ -88,6 +88,20 @@ canvas {
     z-index: -1;
 }
 
+/* Fade-in and move-down animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInMoveDown 1s forwards;
+}
+
+@keyframes fadeInMoveDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
