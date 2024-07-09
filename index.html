@@ -9,19 +9,33 @@
             background-color: black;
             color: white;
             font-family: 'Arial', sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
         }
 
         .container {
-            margin-top: 10%;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 20%;
         }
 
         h1 {
+            position: absolute;
+            top: 20px;
+            left: 20px;
             color: purple;
             text-shadow: 0 0 10px purple, 0 0 20px purple, 0 0 30px purple;
             font-size: 3em;
+        }
+
+        .links {
+            position: absolute;
+            top: 20px;
+            right: 20px;
         }
 
         .links a {
@@ -68,7 +82,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>sultry society</h1>
+        <h1>vortex_light</h1>
         <div class="links">
             <a href="home.html">home</a>
             <a href="uploads.html">uploads</a>
