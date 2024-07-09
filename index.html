@@ -11,6 +11,14 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
         }
 
         .container {
@@ -36,13 +44,13 @@
             position: absolute;
             top: 20px;
             left: 20%;
+            display: flex;
+            gap: 20px;
         }
 
         .links a {
-            display: block;
             color: white;
             text-decoration: none;
-            margin: 10px 0;
             font-size: 1.5em;
             transition: color 0.3s, text-shadow 0.3s;
         }
@@ -79,6 +87,10 @@
             background-color: purple;
             box-shadow: 0 0 10px purple, 0 0 20px purple, 0 0 30px purple;
         }
+
+        .example button, .links a {
+            transition: all 0.3s ease;
+        }
     </style>
 </head>
 <body>
@@ -86,12 +98,12 @@
         <h1>sultry society</h1>
         <div class="links">
             <a href="home.html">home</a>
-            <a href="uploads.html">uploads</a>
+            <a href="latest.html">uploads</a>
         </div>
         <div class="example">
             <p>condos shouldn't be hard to find</p>
-            <button>get latest upload</button>
-            <button>join discord</button>
+            <button onclick="window.location.href='latest.html'">get latest upload</button>
+            <button onclick="window.location.href='https://discord.gg/we25rRqkvH'">join discord</button>
         </div>
     </div>
 </body>
